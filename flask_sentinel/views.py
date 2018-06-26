@@ -6,7 +6,7 @@
     :copyright: (c) 2015 by Nicola Iarocci.
     :license: BSD, see LICENSE for more details.
 """
-from flask import render_template, request
+from flask import render_template, request, jsonify
 
 from .core import oauth
 from .data import Storage
