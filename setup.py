@@ -15,13 +15,13 @@ install_requires = [
 
 
 setup(
-    name='Flask-Sentinel',
+    name='Forked-Flask-Sentinel',
     version='0.0.7',
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     author='Nicola Iarocci',
     author_email='nicola@nicolaiarocci.com',
-    url='https://github.com/pyeve/flask-sentinel',
+    url='https://github.com/saxonhouse/flask-sentinel',
     license='BSD',
     platforms=["any"],
     packages=find_packages(),
