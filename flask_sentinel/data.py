@@ -171,7 +171,7 @@ class Storage(object):
         client.client_id = gen_salt(40)
         client.client_type = "public"
         mongo.db.clients.insert(_to_json(client))
-        return client
+        return to_json(client)
 
     @staticmethod
     def save_user(username, password):
