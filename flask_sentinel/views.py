@@ -32,6 +32,6 @@ def management():
     if request.method == 'POST' and request.form['submit'] == 'Add User':
         Storage.save_user(request.form['username'], request.form['password'])
     if request.method == 'POST' and request.form['submit'] == 'Add Client':
-        return Storage.generate_client()
+        return jsonify(Storage.generate_client())
     return render_template('management.html', users=Storage.all_users(),
                            clients=Storage.all_clients())
